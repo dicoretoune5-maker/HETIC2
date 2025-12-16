@@ -1,4 +1,4 @@
-  <style>
+
         /* ===== RÉINITIALISATION (Reset) ===== */
         * {
             margin: 0;
@@ -61,9 +61,11 @@
         }
 
         .nav-links a:hover {
-            /* TODO MARDI CSS : Ajouter opacity: 0.6; */
+         
+  background: -webkit-linear-gradient(#daa516, #0e92de);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
         }
-
         /* ===== HERO SECTION ===== */
         .hero {
             background-color: #ffffff;
@@ -165,7 +167,7 @@
 
         /* ===== SKILLS SECTION ===== */
         .skills {
-            background-color: #202088;
+            background-color: #7a7a9b;
             padding: 120px 0;
         }
 
@@ -539,4 +541,4 @@
         max-width: 100%;
     }
 }
-    </style>
+    
