@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon Portfolio</title>
     <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=J1tdR8654YEB&format=png&color=000000" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- ===== Ajoute le lien vers le fichier style.css ===== -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -67,7 +68,7 @@
             </p>
             <p>
               <!-- TODO MARDI HTML : Écrivez un deuxième paragraphe sur vous -->
-              Mon objectif est d'être le meilleur analyste de données. Je veux travailler avec les entreprises de manière efficace et efficiente pour attendre leur objetif.
+              Dans un monde où les entreprises collectent des millions de données chaque seconde, les enjeux ne sont plus de stocker… mais de comprendre, prédire, automatiser.<br>Mon objectif est d'être le meilleur analyste de données. Je veux travailler avec les entreprises de manière efficace et efficiente pour attendre leur objetif.
             </p>
           </div>
         </div>
@@ -80,22 +81,28 @@
         <h2 class="section-title">Mes Compétences</h2>
 
         <div class="skills-grid">
-          <div class="skill-card">
-            <div class="skill-icon">🌐</div>
-            <h3>[Communication]</h3>
+          <div class="skill-card Communication">
+            <div class="skill-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Communication</h3>
             <p>[Capacité à communiquer efficacement avec les équipes et les clients]</p>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-icon">⚙️</div>
-            <h3>[Collaboration]</h3>
-            <p>[Capacité à collaborer efficacement avec les équipes et les clients]</p>
+          <div class="skill-card Collaboration">
+            <div class="skill-icon">
+              <i class="fas fa-users-gear"></i>
+            </div>
+            <h3>Collaboration</h3>
+            <p>Capacité à collaborer efficacement avec les équipes et les clients</p>
           </div>
 
           <div class="skill-card">
-            <div class="skill-icon">🎨</div>
-            <h3>[Analyse de données]</h3>
-            <p>[Capacité à analyser et interpréter des données complexes]</p>
+            <div class="skill-icon Data">
+      <i class="fas fa-chart-line"></i>
+    </div>
+            <h3>Analyse de données</h3>
+            <p>Capacité à analyser et interpréter des données complexes</p>
           </div>
         </div>
       </div>
@@ -109,7 +116,7 @@
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-image">
-              <img src="./img/Capture d'écran 2025-12-31 033554.png" alt="Image du projet" />
+              <img src="./img/ChatGPT Image 11 janv. 2026, 14_47_29.png" alt="Image du projet" />
               </div>
             <div class="project-content">
               <h3>projet figma</h3>
@@ -153,7 +160,7 @@
             <textarea id="message" name="message"></textarea>
           </div>
 
-          <button type="submit" class="button-lumineux">Envoyer</button>
+          <button class="button-lumineux">Envoyer</button>
         </form>
       </div>
     </section>
@@ -164,19 +171,19 @@
         <div class="footer-content">
           <div class="footer-section">
             <h3>À propos</h3>
-            <p>[Une courte phrase sur vous et votre domaine]</p>
+            <p>La donnée est partout. Mais seuls les mieux formés sauront l’exploiter. </p>
           </div>
 
           <div class="footer-section">
             <h3>Liens rapides</h3>
             <p>
-              <a href="#about" class="gradient-link">À propos</a>
+               <a href="#about" class="gradient-link">À propos</a>
             </p>
             <p>
-              <a href="#projects" class="gradient-link">Projets</a>
+                <a href="#projects" class="gradient-link">Projets</a>
             </p>
             <p>
-              <a href="#contact" class="gradient-link">Contact</a>
+                <a href="#contact" class="gradient-link">Contact</a>
             </p>
           </div>
 
@@ -184,15 +191,24 @@
             <h3>Suivez-moi</h3>
             <div class="social-links">
               <div class="social-buttons">
-              <a href="http://dicoretoune5@gmail.com" class="btn">🐙</a>
-              <a href="https://www.linkedin.com/in/dieudonne-etoune-139b58281" class="btn">💼</a>
-              <a href="http://etounedieudonne68@gmail.com" class="btn">🐦</a>
-            </div>
+             <div class="social-links">
+
+  <!-- Email -->
+  <a href="mailto:dicoretoune5@gmail.com" class="btn" title="M'envoyer un mail"> <i class="fas fa-envelope"></i></a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/dieudonne-etoune-139b58281" target="_blank" class="btn" title="Mon LinkedIn"> <i class="fab fa-linkedin"></i> </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/dicoretoune5-maker" target="_blank" class="btn" title="Mon GitHub"> <i class="fab fa-github"></i></a>
+
+</div>
+
           </div>
         </div>
 
         <div class="footer-bottom">
-          © 2025 [Etoune DieuDonne]. Tous droits réservés.
+          © 2025 Etoune DieuDonne. Tous droits réservés.
         </div>
       </div>
     </footer>

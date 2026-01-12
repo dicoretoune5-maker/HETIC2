@@ -191,7 +191,8 @@
         }
 
         .skill-card:hover {
-            /* TODO MARDI CSS : Ajouter transform: translateY(-8px); */
+           transform: translateY(-8px);
+ /* TODO MARDI CSS : Ajouter transform: translateY(-8px); */
         }
 
         .skill-icon {
@@ -238,7 +239,7 @@
         }
 
         .project-card:hover {
-            /* TODO MARDI CSS : Ajouter transform: translateY(-4px); */
+          transform: translateY(-4px); /* TODO MARDI CSS : Ajouter transform: translateY(-4px); */
         }
 
         .project-card:nth-child(2) {
@@ -335,7 +336,7 @@
         .form-group input,
         .form-group textarea {
             padding: 12px 16px;
-            border: 1px solid #d2d2d7;
+            border: 1px solid #eeeef3;
             border-radius: 8px;
             font-family: inherit;
             font-size: 1rem;
@@ -367,7 +368,7 @@
 
         .button-lumineux:hover {
             background-color: #9ea6ae;
-    color: #000000;
+    color: #ffffff;
     transform: translateY(-4px); 
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);/* TODO MARDI CSS : Ajouter background-color: #0a84ff; */
             .button-lumineux:active {
@@ -377,10 +378,10 @@
         /* ===== FOOTER ===== */
         footer {
             background-color: #f5f5f7;
-            color: #6f6f74;
+            color: #ffffff;
             padding: 60px 0;
             text-align: center;
-            border-top: 1px solid #e5e5e7;
+            border-top: 1px solid #fefeff;
         }
 
         .footer-content {
@@ -416,38 +417,16 @@
             font-size: 1.2rem;
             transition: color 0.3s;
         }
-
-        .social-links a:hover {
-            .gradient-link {
-  background: linear-gradient(90deg, #c69409, #0e92de, #c69409);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-  animation: gradientMove 3s linear infinite;
-}
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+    color: #ea4335; /* rouge Gmail */
 }
 
             /* TODO MARDI CSS : Ajouter color: #1d1d1f; */
         }
         .footer-bottom {
             font-size: 0.85rem;
-            color: #a1a1a6;
+            color: #f8f8ff;
             padding-top: 40px;
-            border-top: 1px solid #e5e5e7;
+            border-top: 1px solid #ffffff;
         }
 
         /* ===== MEDIA QUERIES (RESPONSIVE) ===== */
