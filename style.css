@@ -8,14 +8,14 @@
 
         /* ===== STYLES GLOBAUX (Design Apple) ===== */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Fira Sans', 'Consolas', 'Monaco', monospace
+            font-family: -apple-system, BlinkMacSystemFont, 'Fira Sans', 'Consolas', 'Monaco', monospace;
             color: #000000;
             background-color: #6a6a6a;
             line-height: 1.6;
         }
  
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         } 
@@ -64,6 +64,7 @@
          
   background: -webkit-linear-gradient(#daa516, #0e92de);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
         }
         /* ===== HERO SECTION ===== */
@@ -110,13 +111,13 @@
         }
 
         .cta-button:hover {
-            /* TODO MARDI CSS : Ajouter background-color: #0a84ff; */
+            background-color: #0a84ff;
         }
 
         /* ===== ABOUT SECTION ===== */
         .about {
             background-color: #ffffff;
-            padding: 1200px 0;
+            padding: 12px 0;
         }
 
         .section-title {
@@ -140,7 +141,7 @@
         }
 
         .about-image img {
-            width: 100%;
+            width: 73%;
             border-radius: 20px;
             display: block;
         }
@@ -181,7 +182,7 @@
         }
 
         .skill-card {
-            background: white;
+            background: rgb(223, 214, 214);
             padding: 40px;
             border-radius: 20px;
             text-align: center;
@@ -216,14 +217,14 @@
 
         /* ===== PROJECTS SECTION ===== */
         .projects {
-            background-color: #ffffff;
-            padding: 120px 0;
+            background-color: #787373;
+            padding: 20px 0;
         }
 
         .projects-grid {
             display: flex;
             gap: 40px;
-            margin-top: 60px;
+            margin-top: 40px;
             flex-direction: column;
             /* TODO MARDI CSS : Vérifier la structure (colonnes empilées) */
         }
@@ -233,7 +234,7 @@
             gap: 40px;
             align-items: center;
             padding: 40px;
-            background: #f5f5f7;
+            background: #fafafa;
             border-radius: 20px;
             transition: all 0.3s;
         }
@@ -295,12 +296,12 @@
         }
 
         .project-link:hover {
-            /* TODO MARDI CSS : Ajouter color: #0a84ff; */
+           color: #0a84ff; /* TODO MARDI CSS : Ajouter color: #0a84ff; */
         }
 
         /* ===== CONTACT SECTION / FORM ===== */
         .contact {
-            background-color: #f5f5f7;
+            background-color: #7d7d8a;
             padding: 120px 0;
         }
 
@@ -336,7 +337,7 @@
         .form-group input,
         .form-group textarea {
             padding: 12px 16px;
-            border: 1px solid #eeeef3;
+            border: 1px solid #7b7b92;
             border-radius: 8px;
             font-family: inherit;
             font-size: 1rem;
@@ -345,7 +346,7 @@
 
         .form-group input:focus,
         .form-group textarea:focus {
-            /* TODO MARDI CSS : Ajouter outline: none; border-color: #0071e3; */
+          outline: none; border-color: #0071e3;  /* TODO MARDI CSS : Ajouter outline: none; border-color: #0071e3; */
         }
 
         .form-group textarea {
@@ -366,18 +367,20 @@
     transition: all 0.4s ease;
         }
 
-        .button-lumineux:hover {
-            background-color: #9ea6ae;
-    color: #ffffff;
-    transform: translateY(-4px); 
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);/* TODO MARDI CSS : Ajouter background-color: #0a84ff; */
-            .button-lumineux:active {
-    transform: scale(0.95);
-      }
+    .button-lumineux:hover {
+        background-color: #0a84ff;
+        color: #ffffff;
+        transform: translateY(-4px); 
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    }
+
+    .button-lumineux:active {
+        transform: scale(0.95);
+    }
 
         /* ===== FOOTER ===== */
         footer {
-            background-color: #f5f5f7;
+            background-color: #938e8e;
             color: #ffffff;
             padding: 60px 0;
             text-align: center;
@@ -411,17 +414,16 @@
             justify-content: center;
         }
 
-        .social-links a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: color 0.3s;
-        }
-    color: #ea4335; /* rouge Gmail */
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
 }
 
-            /* TODO MARDI CSS : Ajouter color: #1d1d1f; */
-        }
+.social-links a:hover {
+    color: #1d1d1f;
+}
         .footer-bottom {
             font-size: 0.85rem;
             color: #f8f8ff;
@@ -433,19 +435,19 @@
 
         /* Tablette (768px et moins) */
         @media (max-width: 768px) {
-            /* TODO MARDI CSS : Navigation - passer à flex-direction: column; gap: 20px; */
+           Navigation - passer à flex-direction: column; gap: 20px; /* TODO MARDI CSS : Navigation - passer à flex-direction: column; gap: 20px; */
             .nav-links {
-                /* TODO MARDI CSS : Ajouter flex-direction: column; gap: 20px; */
+              flex-direction: column; gap: 20px  /* TODO MARDI CSS : Ajouter flex-direction: column; gap: 20px; */
             }
 
             /* TODO MARDI CSS : Hero - réduire h1 à 2.5rem */
             .hero h1 {
-                /* TODO MARDI CSS : Ajouter font-size: 2.5rem; padding: 40px 0; */
+               font-size: 2.5rem;  /* TODO MARDI CSS : Ajouter font-size: 2.5rem; padding: 40px 0; */
             }
 
             /* TODO MARDI CSS : About - passer en colonne */
             .about-content {
-                /* TODO MARDI CSS : Ajouter flex-direction: column; gap: 40px; */
+               flex-direction: column; gap: 40px; /* TODO MARDI CSS : Ajouter flex-direction: column; gap: 40px; */
             }
 
             /* TODO MARDI CSS : Projects - adapter pour mobile */
@@ -459,7 +461,7 @@
 
             /* TODO MARDI CSS : Section padding réduit */
             .about, .skills, .projects, .contact {
-                /* TODO MARDI CSS : Ajouter padding: 80px 0; */
+              padding: 20px  /* TODO MARDI CSS : Ajouter padding: 80px 0; */
             }
         }
 
